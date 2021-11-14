@@ -41,12 +41,12 @@ public class Disfraz implements Serializable {
     @JsonIgnoreProperties("disfraz")
     private Categoria category;
 
-    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "disfraz")
-    @JsonIgnoreProperties({"disfraz", "client"})
+    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "costume")
+    @JsonIgnoreProperties({"costume", "client"})
     private List<Mensaje> messages;
 
-    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "disfraz")
-    @JsonIgnoreProperties({"disfraz", "client"})
+    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "costume")
+    @JsonIgnoreProperties({"costume", "client"})
     private List<Reservaciones> reservations;
 
     public Integer getId() {
