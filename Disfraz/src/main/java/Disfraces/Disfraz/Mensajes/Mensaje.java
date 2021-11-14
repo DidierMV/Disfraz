@@ -32,7 +32,7 @@ public class Mensaje implements Serializable {
     @ManyToOne
     @JoinColumn(name="id")
     @JsonIgnoreProperties({"messages", "client", "reservations"})
-    private Disfraz disfraz;
+    private Disfraz costume;
 
     @ManyToOne
     @JoinColumn(name="clientId")
@@ -56,11 +56,11 @@ public class Mensaje implements Serializable {
     }
 
     public Disfraz getDisfraz() {
-        return disfraz;
+        return costume;
     }
 
-    public void setDisfraz(Disfraz disfraz) {
-        this.disfraz = disfraz;
+    public void setDisfraz(Disfraz costume) {
+        this.costume = costume;
     }
 
     public Cliente getClient() {
