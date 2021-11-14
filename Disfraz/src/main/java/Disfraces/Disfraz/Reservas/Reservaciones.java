@@ -35,7 +35,7 @@ public class Reservaciones implements Serializable {
     @ManyToOne
     @JoinColumn(name = "id")
     @JsonIgnoreProperties("reservations")
-    private Disfraz disfraz;
+    private Disfraz costume;
 
     @ManyToOne
     @JoinColumn(name = "idClient")
@@ -77,11 +77,11 @@ public class Reservaciones implements Serializable {
     }
 
     public Disfraz getDisfraz() {
-        return disfraz;
+        return costume;
     }
 
-    public void setDisfraz(Disfraz disfraz) {
-        this.disfraz = disfraz;
+    public void setDisfraz(Disfraz costume) {
+        this.costume = costume;
     }
 
     public Cliente getClient() {
