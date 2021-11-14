@@ -1,0 +1,21 @@
+git clone "rurl del repo de github"
+
+entrar a la carpeta del proyecto
+mvn clean package -DskipTest
+
+entrar a la carpeta target
+sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
+sudo firewall-cmd --reload
+java -jar ...
+
+sudo yum install -y httpd
+sudo systemctl enable httpd
+sudo systemctl restart httpd
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --reload
+
+cd /var/www/html 
+cd ..
+sudo chmod 777 html
+cd html
+git clone "aqui copia front"

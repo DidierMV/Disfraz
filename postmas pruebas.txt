@@ -1,0 +1,33 @@
+http://localhost:8080/api/Category/save
+{"name":"hero","description":"superhero costume"}
+
+http://localhost:8080/api/Constume/save
+{"brand":"DC","year":2021,"description":"superman costume","name":"Superman","category":{"id":1}}
+
+
+http://localhost:8080/api/Client/save
+{"name":"Agustin Parra","email":"agustin@gmail.com","password":"agustin123","age":18}
+
+
+http://localhost:8080/api/Message/save
+{"messageText":"Me gusta.","client":{"idClient":1},"costume":{"id":1}}
+
+
+http://localhost:8080/api/Reservation/save
+{"startDate":"2020-12-20","devolutionDate":"2020-12-20","client":{"idClient":1},"costume":{"id":1}}
+
+
+
+http://localhost:8080/api/Category/all
+http://localhost:8080/api/Constume/all
+http://localhost:8080/api/Client/all
+http://localhost:8080/api/Message/all
+http://localhost:8080/api/Reservation/all
+
+
+
+[{"idReservation":1,"startDate":"2020-12-20T00:00:00.000+00:00","devolutionDate":"2020-12-20T00:00:00.000+00:00","status":"created","costume":{"id":1,"name":"Superman","brand":"DC","year":2021,"description":"superman costume","category":{"id":1,"name":"hero","description":"superhero costume"},"messages":[{"idMessage":1,"messageText":"Me gusta."}]},"client":{"idClient":1,
+"email":"agustin@gmail.com","password":"agustin123","name":"Agustin Parra","age":18},"score":null}]
+
+[{"idReservation":1,"startDate":"2020-12-20T00:00:00.000+00:00","devolutionDate":"2020-12-20T00:00:00.000+00:00","status":"created","disfraz":null,"client":{"idClient":1,
+"email":"agustin@gmail.com","password":"agustin123","name":"Agustin Parra","age":18},"score":null}]
