@@ -62,8 +62,8 @@ public class Categoria implements Serializable {
         return costume;
     }
 
-    public void setDisfraz(List<Disfraz> disfraz) {
-        this.costume = disfraz;
+    public void setDisfraz(List<Disfraz> costume) {
+        this.costume = costume;
     }
 
 }
